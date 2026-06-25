@@ -1,4 +1,4 @@
-package com.chandu.student_management.entity;
+package com.chandu.studentManagement.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

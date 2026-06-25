@@ -1,4 +1,4 @@
-package com.chandu.student_management.model;
+package com.chandu.studentManagement.model;
 
 import lombok.Data;
 

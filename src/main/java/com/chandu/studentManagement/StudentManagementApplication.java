@@ -1,4 +1,4 @@
-package com.chandu.student_management;
+package com.chandu.studentManagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

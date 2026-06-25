@@ -1,4 +1,4 @@
-package com.chandu.student_management;
+package com.chandu.studentManagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

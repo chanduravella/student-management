@@ -1,8 +1,8 @@
-package com.chandu.student_management.controller;
+package com.chandu.studentManagement.controller;
 
-import com.chandu.student_management.entity.StudentEntity;
-import com.chandu.student_management.model.Student;
-import com.chandu.student_management.service.StudentService;
+import com.chandu.studentManagement.entity.StudentEntity;
+import com.chandu.studentManagement.model.Student;
+import com.chandu.studentManagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,8 +1,8 @@
-package com.chandu.student_management.service;
+package com.chandu.studentManagement.service;
 
-import com.chandu.student_management.dao.StudentDao;
-import com.chandu.student_management.entity.StudentEntity;
-import com.chandu.student_management.model.Student;
+import com.chandu.studentManagement.dao.StudentDao;
+import com.chandu.studentManagement.entity.StudentEntity;
+import com.chandu.studentManagement.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
