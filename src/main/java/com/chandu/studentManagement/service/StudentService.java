@@ -21,11 +21,30 @@ public class StudentService {
         return studentDao.findAll();
     }
 
-    public StudentEntity saveStudent(Student student) {
+    public void saveStudent(Student student) {
         StudentEntity studentEntity = new StudentEntity();
         studentEntity.setName(student.getName());
         studentEntity.setEmail(student.getEmail());
+        studentEntity.setAge(student.getAge());
+        studentEntity.setCourse(student.getCourse());
         log.info("Saving student into database: {}", studentEntity);
-        return studentDao.save(studentEntity);
+        studentDao.save(studentEntity);
+    }
+
+    public void updateStudent(Long id, Student student) {
+        log.info("Updating student with id: {}", id);
+        StudentEntity existingStudent = studentDao.findById(id)
+                .orElseThrow(() -> new RuntimeException("Student not found with id: " + id));
+        existingStudent.setName(student.getName());
+        existingStudent.setEmail(student.getEmail());
+        existingStudent.setAge(student.getAge());
+        existingStudent.setCourse(student.getCourse());
+        log.info("Saving updated student into database: {}", existingStudent);
+        studentDao.save(existingStudent);
+    }
+
+    public void deleteStudent(Long id) {
+        log.info("Deleting student with id: {}", id);
+        studentDao.deleteById(id);
     }
 }
